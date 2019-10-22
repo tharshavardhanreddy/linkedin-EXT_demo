@@ -233,7 +233,7 @@
                                   </ui:CursorPosition>
                                 </ui:Click.CursorPosition>
                                 <ui:Click.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6192eb91a5926d5d128014c13a7c4882" Selector="&lt;webctrl aaname='Harshavardhan Reddy tatireddy' parentid='ember*' tag='SPAN' /&gt;">
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6192eb91a5926d5d128014c13a7c4882" Selector="&lt;webctrl aaname='Harshavardhan Reddy *atireddy' parentid='ember*' tag='SPAN' idx='1' /&gt;">
                                     <ui:Target.TimeoutMS>
                                       <InArgument x:TypeArguments="x:Int32" />
                                     </ui:Target.TimeoutMS>
