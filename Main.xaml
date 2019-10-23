@@ -53,6 +53,7 @@
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt" />
       <Variable x:TypeArguments="x:String" Name="appno" />
+      <Variable x:TypeArguments="x:String" Name="name" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -116,28 +117,25 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="578,2198" sap2010:WorkflowViewState.IdRef="Sequence_11">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="ui:GenericValue" Name="name" />
-        </Sequence.Variables>
+      <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="578,2398" sap2010:WorkflowViewState.IdRef="Sequence_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser BrowserType="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="536,1960" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.linkedin.com/login?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin">
+        <ui:OpenBrowser BrowserType="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="536,2160" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.linkedin.com/login?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <ui:BrowserScope Browser="{x:Null}" BrowserType="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" DisplayName="Attach Browser 'chrome.exe LinkedIn'" sap:VirtualizedContainerService.HintSize="502,1861" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="8bd7dd70f57bbc3b11fb4c7f56193fa4" Selector="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" BrowserType="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" DisplayName="Attach Browser 'chrome.exe LinkedIn'" sap:VirtualizedContainerService.HintSize="502,2061" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="8bd7dd70f57bbc3b11fb4c7f56193fa4" Selector="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,1715" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,1915" sap2010:WorkflowViewState.IdRef="Sequence_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,18 +185,37 @@
                       </ui:Click>
                       <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="426,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
                       <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[dt]" Delimitator="Comma" DisplayName="Read CSV" FilePath="E:\uipath\linkedin-ext10.csv" sap:VirtualizedContainerService.HintSize="426,59" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
-                      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="426,814" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dt]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="426,1014" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                         <ui:ForEachRow.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,867" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="selector" />
+                              </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[dt.Rows(0).ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[selector]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["&lt;webctrl aaname='"+name+"' parentid='ember*' tag='SPAN' idx='1' /&gt;"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
                               <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[row(0).ToString]" />
                               <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" Text="[row(0).ToString]">
                                 <ui:TypeInto.Target>
@@ -236,7 +253,7 @@
                                   </ui:CursorPosition>
                                 </ui:Click.CursorPosition>
                                 <ui:Click.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6192eb91a5926d5d128014c13a7c4882" Selector="&lt;webctrl aaname='Harshavardhan Reddy Tatireddy' parentid='ember*' tag='SPAN' idx='1' /&gt;">
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6192eb91a5926d5d128014c13a7c4882" Selector="[selector]">
                                     <ui:Target.TimeoutMS>
                                       <InArgument x:TypeArguments="x:Int32" />
                                     </ui:Target.TimeoutMS>
