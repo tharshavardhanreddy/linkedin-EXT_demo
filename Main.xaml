@@ -279,10 +279,10 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
         <ui:Click.CursorPosition>
-          <ui:CursorPosition OffsetX="83" OffsetY="32" Position="TopLeft" />
+          <ui:CursorPosition OffsetX="57" OffsetY="4" Position="TopLeft" />
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="40250e2e986c83c5ea42cb3f0a57937c" Selector="&lt;wnd app='githubdesktop.exe' cls='Chrome_WidgetWin_1' title='GitHub Desktop' /&gt;&lt;ctrl name='Fetch origin Last fetched just now' role='push button' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4fa36e27a051a9d111b396bddd9b9f02" Selector="&lt;html app='chrome.exe' title='tharshavardhanreddy (Tatireddy Harshavardhan Reddy)' /&gt;&lt;webctrl aaname='               sgs-form             ' parentid='js-pjax-container' tag='A' /&gt;" WaitForReady="COMPLETE">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
