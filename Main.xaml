@@ -112,7 +112,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="578,2214" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,12 +277,12 @@
           <av:Size x:Key="ShapeSize">200,51</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
         <ui:Click.CursorPosition>
-          <ui:CursorPosition OffsetX="46" OffsetY="20" Position="TopLeft" />
+          <ui:CursorPosition OffsetX="570" OffsetY="99" Position="TopLeft" />
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="c7cecaa21d436ac79be9a46e4036b6fd" Selector="&lt;webctrl parentid='password-prompt-wrapper' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1c8fe288b370ffb1dc9712568ce933f6" Selector="&lt;html app='chrome.exe' title='tharshavardhanreddy (Tatireddy Harshavardhan Reddy)' /&gt;" WaitForReady="COMPLETE">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
