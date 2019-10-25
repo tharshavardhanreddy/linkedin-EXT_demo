@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,736" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,696" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
       <x:String>System.Activities</x:String>
@@ -279,10 +279,10 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
         <ui:Click.CursorPosition>
-          <ui:CursorPosition OffsetX="570" OffsetY="99" Position="TopLeft" />
+          <ui:CursorPosition OffsetX="83" OffsetY="32" Position="TopLeft" />
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1c8fe288b370ffb1dc9712568ce933f6" Selector="&lt;html app='chrome.exe' title='tharshavardhanreddy (Tatireddy Harshavardhan Reddy)' /&gt;" WaitForReady="COMPLETE">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="40250e2e986c83c5ea42cb3f0a57937c" Selector="&lt;wnd app='githubdesktop.exe' cls='Chrome_WidgetWin_1' title='GitHub Desktop' /&gt;&lt;ctrl name='Fetch origin Last fetched just now' role='push button' /&gt;" WaitForReady="COMPLETE">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
