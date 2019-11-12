@@ -398,7 +398,7 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="124a3cb0f1cb3ec0a2d3cea9cb00a9f0" Selector="&lt;webctrl aaname='          Connections    7     ' parentid='ember1293' tag='DIV' /&gt;">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1a184ea387eae45d2022a4a3736f6d3c" Selector="&lt;webctrl aaname='     Connections ' parentid='ember1257' tag='DIV' /&gt;">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
