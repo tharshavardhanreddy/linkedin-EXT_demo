@@ -570,7 +570,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_4" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdHnZj175oUCJ0bgFxPOk2AAAAAACAAAAAAAQZgAAAAEAACAAAAAC0bvX/+cDnGuHcAuzglGJ/uIGrUEYRSj+4Ipp7Ma0LQAAAAAOgAAAAAIAACAAAAD5upNyojCDog5nit1Plj6IVgTuPwryoqAmm+OkqTesXRAAAACEo61HOMd71PTjruBqXoQXQAAAAIsU0C4eEoCNXXIWe8nSk2YXLj0wTAQRm10deBtuGxob6hqU1DJE0gBlRaIayY6aTaYxWjReNCzQroPBtgYrGlE=" Result="[Password]" />
+                        <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_4" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdHnZj175oUCJ0bgFxPOk2AAAAAACAAAAAAAQZgAAAAEAACAAAAD7OIwi4w+JjZdzlMBRW7FVzdbb/FRFnxjmxwFi0FhORwAAAAAOgAAAAAIAACAAAADCWMZ/kj0b1pmUjNh2IPU22GmUlzUor9iYC1Ybp1lo+RABAABLo3HrG3jc768lbdCP42i2XfbB631FOBl7t7ES6cer5feO1c5xkToXAtqfwPOR3XVhzPhTPsS8vBkE+KB+vzBQ/QwNob5l57tFOxQhGfn0Na4CSRbDyDmVPG4WB6cV0T1DjPHP6ZEDsOdAP5UNCN/FnG9XBSpyHTfkRxQVk+N/zkm6KwIJZmv/Mv9B8CN+kNflMzOoQ0rwpBg4IOhd7G0BaDWljpRQ0U3mSOkoPW3CAaW7iuoIyi+5U+SG2CQ10clEmi3GBf8Fg5PTyTDsJMFO5V/YiLaPtfgCVDNOow5KBNj89kGNP9+kF+BzwHepdYIP+kdCdEvMFnJKwo4EvCvXdwoYhJ3SRs1ZKU8Cm6OHJUAAAAA+YQPznSQLdBdCfjoRIyZqjgyWGSr+DF7pnuZlxh3IE58ge1zjdOYA9/tDapEFF71BLro8HEaM2UmyDpwnwTYs" Result="[Password]" />
                         <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  password'" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" SendWindowMessages="False" SimulateType="True" Text="[Password]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec6275f1faa84dfd13b9d8531692b645" Selector="&lt;webctrl id='password' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
@@ -665,6 +665,21 @@
             </ActivityAction>
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">40,496.04</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="scraping connections" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_24">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </Sequence>
     </FlowStep>
   </Flowchart>
