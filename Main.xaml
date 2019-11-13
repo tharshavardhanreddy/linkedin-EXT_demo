@@ -769,7 +769,7 @@
                                   </ui:CursorPosition>
                                 </ui:Click.CursorPosition>
                                 <ui:Click.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d56ed621be3ed04c86b98e7fcd6fdc1b" Selector="&lt;html title='(1) Harshavardhan Reddy Tatireddy | LinkedIn' /&gt;&lt;webctrl id='ember*' tag='BUTTON' /&gt;">
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6a2af820db036cb867c9c9881b585a45" Selector="&lt;webctrl id='ember*' tag='DIV' idx='7' /&gt;">
                                     <ui:Target.TimeoutMS>
                                       <InArgument x:TypeArguments="x:Int32" />
                                     </ui:Target.TimeoutMS>
